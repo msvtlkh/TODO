@@ -1,0 +1,159 @@
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #949498;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+
+body {
+    background-color: #292931;
+    color: #292931;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.todo__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    width: 443px;
+    border-radius: 5px;
+    box-shadow: 15px 13px 25px black;
+
+    padding: 5px 10px;
+}
+
+.todo__content {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+ul {
+    height: 200px;
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+}
+
+.title__status {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 11px;
+    border: 1px solid #949498;
+    border-radius: 5px;
+}
+
+.add__task {
+    accent-color: white;
+    border: none;
+    outline:none;
+    width: 80%;
+}
+
+.btn__add {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    transform: rotate(45deg);
+}
+
+.btn__add::after {
+    position: absolute;
+    content: url('/close-icon.svg');
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -8px;
+}
+
+/* -------------------------------- */
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 11px;
+    border: 1px solid #949498;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.task.checked {
+    background-color: #69696917;
+}
+
+.checkbox__task {
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid white;
+  box-shadow: 0 0 0 1px #949498;
+
+  margin-right: 8px;
+}
+
+.checkbox__task:hover {
+    background-color: #949498;
+}
+  
+.checkbox__task:checked {
+    background-color: black;
+} 
+
+.container__input {
+    display: flex;
+    align-items: center;
+}
+
+.btn__remove {
+    position: relative;
+    border: none;
+    height: 17px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn__remove::after {
+    content: url('/close-icon.svg');
+    height: 10px;
+    width: 10px;
+}
+
+
+
